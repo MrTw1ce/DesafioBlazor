@@ -1,0 +1,17 @@
+@page "/page"
+@rendermode InteractiveServer
+
+<h3>Interactive Page</h3>
+
+<p>@message</p>
+
+<button @onclick="UpdateMessage">Click Me</button>
+
+@code {
+    private string message = "Click the button to interact.";
+
+    private void UpdateMessage()
+    {
+        message = "You clicked the button!";
+    }
+}

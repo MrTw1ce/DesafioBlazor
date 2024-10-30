@@ -1,0 +1,30 @@
+<div class="col-10">
+    <div class="row">
+        <h6 class="bold-text">@product</h6>
+    </div>
+    <div class="row">
+        <div class="col-2 highlight-text">@(quantity)x</div>
+        <div class="col-3 extra-text-light">$@price.ToString("F2")</div>
+        <div class="col-3 bold-text extra-text">$@((price*quantity).ToString("F2"))</div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<div class="col-2 d-flex align-items-center">
+    <button class="remove-from-cart btn" @onclick="OnClick">
+        <img src="./assets/images/icon-remove-item.svg">
+    </button>
+</div>
+
+@code{
+    [Parameter]
+    public string product {get;set;}
+
+    [Parameter]
+    public int quantity {get;set;}
+
+    [Parameter]
+    public float price {get;set;}
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+}

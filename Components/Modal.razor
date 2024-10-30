@@ -1,0 +1,81 @@
+<div class="modal" id="end-order-modal" tabindex="-1" style="background-color: rgba(0,0,0,0.6); overflow-y: hidden;">
+  <div class="modal-dialog">
+    <div class="modal-content" style="margin:0 auto;">
+        <div class="row">
+            <img class="confirmed-icon" src="./assets/images/icon-order-confirmed.svg">
+        </div>
+        <div class="row">
+            <h1 class="bold-text">Order Confirmed</h1>
+        </div>
+        <div class="row">
+            <h6 class="extra-text-light">We hope you enjoy your food!</h6>
+        </div>
+        <br>
+        <div class="modal-body">
+            <div id="cart-modal-body" class="order-details">
+                    
+                <div class="order-products-modal">
+                    @foreach(var order in cart){
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="product-thumbnail" src="@getProductThumbnail(order.Product)">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 bold-text">@order.Product</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 highlight-text">@(order.Quantity)x</div>
+                                    <div class="col-10 extra-text-light">&#64;$@order.Price.ToString("F2")</div>
+                                </div>
+                            </div>
+                            <div class="col-3 bold-text">
+                                $@((order.Price*order.Quantity).ToString("F2"))
+                            </div>
+                            
+                        </div>
+                        <hr style="background-color: hsl(7, 20%, 60%);">
+                    }
+
+                </div>
+                <div class="row align-items-center order-price-modal">
+                    <div class="col-6">Order Total</div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <h2 class="bold-text">$@totalPrice.ToString("F2")</h2>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <button class="confirm btn bold-text" @onclick="CloseModalMethod">Start New Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+@code{
+    [Parameter]
+    public List<Products> products {get;set;}
+
+    [Parameter]
+    public List<ProductOrder> cart {get;set;}
+
+    [Parameter]
+    public double totalPrice {get;set;}
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> CloseModalMethod { get; set; }
+
+    private string getProductThumbnail(string product){
+        foreach(var i in products){
+            if(i.Name == product){
+                return i.Image.thumbnail;
+            }
+        }
+        return "...";
+    }
+}

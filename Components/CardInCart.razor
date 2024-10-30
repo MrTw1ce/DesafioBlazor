@@ -1,0 +1,51 @@
+<div class="col-sm-4 d-flex justify-content-center" style="padding: 2% 1% 2% 1%">
+    <div class="card product-card" style="width: 17rem;">
+        <img class="selected-product-image" src="@image">
+
+        <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center adjust-cart-quantity">
+                <div class="col-3">
+                    <button class="btn" id="decrement-${productOrder['id']}" @onclick="OnClickDecrement">
+                        <img src="./assets/images/icon-decrement-quantity.svg">
+                    </button>
+                </div>
+                <div class="col-6 d-flex justify-content-center align-items-center bold-text">
+                    @quantity
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <button class="btn" id="increment-${productOrder['id']}" @onclick="OnClickIncrement">
+                        <img src="./assets/images/icon-increment-quantity.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h6 class="extra-text-light">@category</h6>
+            <h6 class="card-title bold-text">@name</h6>
+            <h6 class="highlight-text">$@price.ToString("F2")</h6>
+        </div>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public string image {get;set;}
+
+    [Parameter]
+    public string category {get;set;}
+
+    [Parameter]
+    public string name {get;set;}
+
+    [Parameter]
+    public double price {get;set;}
+
+    [Parameter]
+    public int quantity {get;set;}
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClickIncrement { get; set; }
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClickDecrement { get; set; }
+}

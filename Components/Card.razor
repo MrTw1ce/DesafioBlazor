@@ -1,0 +1,36 @@
+<div class="col-sm-4 d-flex justify-content-center" style="padding: 2% 1% 2% 1%">
+    <div class="card product-card" style="width: 17rem;">
+        <img class="product-image" src="@image">
+        <div class="d-flex justify-content-center">
+            <button class="add-to-cart btn bold-text" @onclick="OnClick">
+                <img src="./assets/images/icon-add-to-cart.svg">
+                    Add to Cart
+            </button>
+        </div>
+        <div class="card-body">
+            <h6 class="extra-text-light">@category</h6>
+            <h6 class="card-title bold-text">@name</h6>
+            <h6 class="highlight-text">$@price.ToString("F2")</h6>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code{
+    [Parameter]
+    public string image {get;set;}
+
+    [Parameter]
+    public string category {get;set;}
+
+    [Parameter]
+    public string name {get;set;}
+
+    [Parameter]
+    public double price {get;set;}
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+}

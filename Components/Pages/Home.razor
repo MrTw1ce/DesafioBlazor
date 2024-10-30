@@ -1,0 +1,186 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<link rel="stylesheet" href="catalogueStyle.css" />
+
+<PageTitle>Home</PageTitle>
+
+<section class="catalogue" style="background-color: hsl(20, 50%, 98%);">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 class="catalogue-title bold-text">Desserts</h1>
+            <div id="catalogue-items" class="row">
+                @if(products is null){
+                    <p>Nothing here</p>
+                }else{
+                    foreach(var i in products){
+                        if(CheckIfInCart(i.Name)){
+                            <CardInCart image="@i.Image.desktop" category="@i.Category" name="@i.Name" price="@i.Price" quantity="GetProductQuantityInCart(i.Name)" OnClickDecrement="() => UpdateProductQuantity(GetProductInCartId(i.Name),i.Price,GetProductQuantityInCart(i.Name)-1)" OnClickIncrement="() => UpdateProductQuantity(GetProductInCartId(i.Name),i.Price,GetProductQuantityInCart(i.Name)+1)"></CardInCart>
+                        }
+                        else{
+                            <Card image="@i.Image.desktop" category="@i.Category" name="@i.Name" price="@i.Price" OnClick="() => AddProductToCart(i.Name,i.Price)"></Card>
+                        }
+                        
+                    }
+                    
+                }
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="user-cart">
+                <h3 id="cart-title" class="highlight-text">Your Cart (@cartQuantity)</h3>
+                <div id="cart-body">
+                    @if(cartQuantity > 0){
+                        foreach(var order in cart){
+                            <div class="row product-order">
+                                <Cart product="@order.Product" price="@order.Price" quantity="@order.Quantity" OnClick="() => DeleteProductFromCart(order.Id)"></Cart>
+                            </div>
+                            <hr style="background-color: hsl(7, 20%, 60%);">
+                        }       
+                    }
+                    else{
+                        <div class="row text-center">
+                            <img class="center-block" src="./assets/images/illustration-empty-cart.svg" style="width:14rem; height:14rem; display:block; margin-left:auto; margin-right:auto;">
+                            <p style="color:hsl(7, 20%, 60%)">Your added items will appear here</p>
+                        </div>
+                    }
+                </div>
+                <div id="cart-footer">
+                    @if(cartQuantity > 0){
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                Order Total
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <h2 class="bold-text">$@totalPrice.ToString("F2")</h2>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-10 d-flex justify-content-center delivery-note">
+                                <img src="./assets/images/icon-carbon-neutral.svg">
+                                &nbspThis is a&nbsp<b>carbon-neutral</b>&nbspdelivery
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row d-flex justify-content-center">
+                            <button class="confirm btn bold-text" @onclick="() => openModal()">Confirm Order</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if(modalVisible){
+    <Modal products="@products" cart="cart" totalPrice="@totalPrice" CloseModalMethod="StartNewOrder"></Modal>
+}
+
+@code{
+    public List<string> users;
+    public List<Products> products;
+    public List<ProductOrder> cart;
+    public int cartQuantity = 0;
+    public double totalPrice = 0;
+    public bool modalVisible = false;
+    public HttpClient httpClient = new HttpClient();
+
+    public async Task FetchData(){
+        users = await httpClient.GetFromJsonAsync<List<string>>("http://localhost:5013/content");
+        /*foreach(var i in users)
+        {
+            Console.WriteLine(i);
+        }
+        str = users.ToString();*/
+    }
+
+    public async Task FetchProducts(){
+        products = await httpClient.GetFromJsonAsync<List<Products>>("http://localhost:5013/products");
+        foreach(var i in products){
+            //Console.WriteLine(i);
+        }  
+    }
+
+    public async Task FetchCart(){
+        cart = await httpClient.GetFromJsonAsync<List<ProductOrder>>("http://localhost:5013/cart");
+        cartQuantity = 0;
+        totalPrice = 0;
+        foreach(var i in cart){
+            Console.WriteLine(i);
+            cartQuantity += i.Quantity;
+            totalPrice += (i.Quantity * i.Price);
+        }
+    }
+
+    protected override async Task OnInitializedAsync(){
+        //await FetchData();
+        await FetchProducts();
+        await FetchCart();
+        Console.WriteLine("Loaded");
+    }
+
+    private async Task DeleteProductFromCart(int id){
+        string url = "http://localhost:5013/cart/" + id.ToString();
+        await httpClient.DeleteFromJsonAsync<List<ProductOrder>>(url);
+        await FetchProducts();
+        await FetchCart();
+        Console.WriteLine(id);
+    }
+
+    private async Task AddProductToCart(string product, float currentPrice){
+        string url = "http://localhost:5013/cart/";
+        await httpClient.PostAsJsonAsync(url, new ProductOrder(1,product,currentPrice,1));
+        await FetchProducts();
+        await FetchCart();
+    }
+
+    private async Task UpdateProductQuantity(int id, float currentPrice, int quantity){
+        string url = "http://localhost:5013/cart/" + id.ToString();
+        await httpClient.PutAsJsonAsync(url, new ProductOrder(1,"",currentPrice, quantity));
+        await FetchProducts();
+        await FetchCart();
+    }
+
+    private bool CheckIfInCart(string product){
+        foreach(var i in cart){
+            if(i.Product == product){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private int GetProductQuantityInCart(string product){
+        foreach(var i in cart){
+            if(i.Product == product){
+                return i.Quantity;
+            }
+        }
+        return 0;
+    }
+
+    private int GetProductInCartId(string product){
+        foreach(var i in cart){
+            if(i.Product == product){
+                return i.Id;
+            }
+        }
+        return 0;
+    }
+
+    private void openModal(){
+        modalVisible = true;
+    }
+
+    private void closeModal(){
+        modalVisible = false;
+    }
+
+    private async Task StartNewOrder(){
+        string url = "http://localhost:5013/cart/";
+        await httpClient.DeleteFromJsonAsync<List<ProductOrder>>(url);
+        closeModal();
+        await FetchProducts();
+        await FetchCart();
+    }
+}
