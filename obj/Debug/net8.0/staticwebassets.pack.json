@@ -1,0 +1,245 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\App1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\App1.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\RedHatText-Italic-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\RedHatText-Italic-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\RedHatText-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\RedHatText-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\static\\RedHatText-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\static\\RedHatText-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\static\\RedHatText-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\static\\RedHatText-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\fonts\\static\\RedHatText-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\static\\RedHatText-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-add-to-cart.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-add-to-cart.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-carbon-neutral.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-carbon-neutral.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-decrement-quantity.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-decrement-quantity.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-increment-quantity.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-increment-quantity.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-order-confirmed.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-order-confirmed.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\icon-remove-item.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\icon-remove-item.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\illustration-empty-cart.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\illustration-empty-cart.svg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-baklava-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-baklava-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-baklava-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-baklava-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-baklava-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-baklava-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-baklava-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-baklava-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-brownie-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-brownie-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-brownie-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-brownie-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-brownie-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-brownie-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-brownie-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-brownie-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-cake-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-cake-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-cake-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-cake-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-cake-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-cake-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-cake-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-cake-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-creme-brulee-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-creme-brulee-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-creme-brulee-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-creme-brulee-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-creme-brulee-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-creme-brulee-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-creme-brulee-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-creme-brulee-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-macaron-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-macaron-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-macaron-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-macaron-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-macaron-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-macaron-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-macaron-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-macaron-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-meringue-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-meringue-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-meringue-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-meringue-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-meringue-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-meringue-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-meringue-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-meringue-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-panna-cotta-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-panna-cotta-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-panna-cotta-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-panna-cotta-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-panna-cotta-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-panna-cotta-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-panna-cotta-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-panna-cotta-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-tiramisu-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-tiramisu-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-tiramisu-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-tiramisu-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-tiramisu-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-tiramisu-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-tiramisu-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-tiramisu-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-waffle-desktop.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-waffle-desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-waffle-mobile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-waffle-mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-waffle-tablet.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-waffle-tablet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\assets\\images\\image-waffle-thumbnail.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\image-waffle-thumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lucas\\OneDrive\\Ambiente de Trabalho\\Code Training\\C# & .NET\\App1\\wwwroot\\catalogueStyle.css",
+      "PackagePath": "staticwebassets\\catalogueStyle.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.App1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.App1.props",
+      "PackagePath": "build\\App1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.App1.props",
+      "PackagePath": "buildMultiTargeting\\App1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.App1.props",
+      "PackagePath": "buildTransitive\\App1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
