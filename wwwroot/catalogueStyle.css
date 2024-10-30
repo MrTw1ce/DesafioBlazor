@@ -1,0 +1,239 @@
+body {
+    font-family: "./assets/fonts/static/RedHatText-Regular.ttf",sans-serif;
+}
+
+.catalogue{
+    padding: 5%;
+}
+
+.product-card{
+    border-radius: 15px !important;
+    padding: 0.1%;
+    border: transparent !important;
+}
+
+.product-image{
+    border-radius: 15px;
+}
+
+.selected-product-image{
+    border: 5px hsl(14, 86%, 42%) solid !important;
+    border-radius: 15px;
+}
+
+.add-to-cart.btn{
+    padding: 10px !important;
+    width: 14rem;
+    position: relative;
+    bottom: 1.5rem;
+    background-color: white !important;
+    border: 1px hsl(7, 20%, 60%) solid !important;
+    border-radius: 100px !important;
+    cursor: pointer;
+}
+
+.add-to-cart.btn:hover{
+    border: 1px hsl(14, 86%, 42%) solid !important;
+    color: hsl(14, 86%, 42%);
+    transition: ease-in-out 0.5s;
+}
+
+.adjust-cart-quantity{
+    color: white;
+    padding: 10px !important;
+    width: 14rem;
+    position: relative;
+    bottom: 1.5rem;
+    background-color: hsl(14, 86%, 42%) !important;
+    border-radius: 100px !important;
+}
+
+.adjust-cart-quantity .btn {
+    border: 2px hsl(20, 50%, 98%) solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjust-cart-quantity .btn:hover {
+    background-color: hsl(20, 50%, 98%);
+    transition: ease-in-out 0.5s;
+}
+
+.adjust-cart-quantity .btn:hover img{
+    filter: invert(28%) sepia(89%) saturate(6470%) hue-rotate(20deg) brightness(98%) contrast(97%);
+    transition: ease-in-out 0.5s;
+}
+
+.product-order .remove-from-cart.btn{
+    border: 2px hsl(7, 20%, 60%) solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-order .remove-from-cart.btn:hover{
+    border: 2px hsl(14, 65%, 9%) solid;
+    transition: ease-in-out 0.5s;
+}
+
+.product-order .remove-from-cart.btn:hover img{
+    filter: brightness(0%);
+    transition: ease-in-out 0.5s;
+}
+
+.adjust-cart-quantity .btn img, .product-order .remove-from-cart.btn img {
+    display: block;
+    margin: auto !important;
+}
+
+.user-cart{
+    background-color: white !important;
+    border: transparent !important;
+    border-radius: 30px !important;
+}
+
+#cart-title{
+    padding: 15px !important;
+}
+
+#cart-body{
+    padding-left: 15px;
+    overflow-y: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+#cart-footer{
+    padding: 15px !important;
+}
+
+.delivery-note{
+    padding: 15px !important;
+}
+
+.delivery-note, .order-details{
+    border-radius: 15px;
+    background-color: hsl(13, 31%, 94%);
+}
+
+.order-products-modal{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 450px;
+    padding: 15px 0px 0px 15px;
+}
+
+.order-price-modal{
+    padding: 5px 15px 15px 15px;
+}
+
+.highlight-text{
+    font-weight: 700;
+    color: hsl(14, 86%, 42%);
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.extra-text{
+    font-weight: 600;
+    color: hsl(14, 25%, 72%);
+}
+
+.extra-text-light{
+    font-weight: 400;
+    color: hsl(14, 25%, 72%);
+}
+
+.confirm.btn{
+    height: 2.5rem;
+    width: 28rem;
+    padding: 15px, 10px, 15px, 10px !important;
+    color: white;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 100px;
+}
+
+.confirm.btn:hover{
+    background-color: hsl(14, 85%, 32%);
+    transition: ease-in-out;
+}
+
+.modal{
+    display: block !important;
+}
+
+.modal-content{
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.confirmed-icon{
+    width: 60px;
+    height: 45px;
+}
+
+.product-thumbnail{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 5px;
+}
+
+@media (max-width:376px){
+    .catalogue-title{
+        padding-left: 10%;
+    }
+
+    .modal-body{
+        overflow-y: hidden !important;
+        max-height: 300px !important;
+    }
+
+    .order-products-modal{
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 150px !important;
+        padding: 5px 0px 0px 5px !important;
+    }
+}
+
+@media (max-width:1445px){
+    .confirm.btn{
+        width: 18rem !important;
+    }
+
+    .modal-body{
+        overflow-y: auto;
+        max-height: 300px;
+    }
+
+    .delivery-note{
+        width: 20em;
+    }
+
+    .modal-body{
+        overflow-y: hidden !important;
+        max-height: 650px;
+    }
+
+    .order-products-modal{
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 450px;
+        padding: 15px 0px 0px 15px;
+    }
+}
+
+@media (min-width:1850px){
+    .catalogue-title{
+        padding-left: 3.5% !important;
+    }
+}
